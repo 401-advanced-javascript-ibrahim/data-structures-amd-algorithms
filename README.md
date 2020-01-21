@@ -7,5 +7,7 @@ it should returns the index of the value that passes to the function, and return
 ## Approach & Efficiency
 I manage to make a simple function and a simple test for this function to ensure the functionality of it 
 
+For the second commit I refactor the code to use binary search metho
+
 ## Solution
 ![](./challenges/src/IMG_20200121_162402.jpg)
