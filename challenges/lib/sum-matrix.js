@@ -29,6 +29,6 @@ function fibSeq(num) {
     }
 }
 
-fibSeq(-15)
 
-module.exports = sumMatrix;
+
+module.exports = { sumMatrix, fibSeq };
