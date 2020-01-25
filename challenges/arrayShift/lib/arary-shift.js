@@ -6,14 +6,6 @@ let testArray = [2, 4, 6, 8]
 let testArr = [1, 2, 5, 4, 3]
 console.log('teeee', testArray);
 
-class List {
-    constructor() {
-        this.length = 0;
-        this.data = {};
-    }
-
-}
-
 arratShift.push = function (arr, item) {
     let data = {}
     for (let i = 0; i < arr.length; i++) {

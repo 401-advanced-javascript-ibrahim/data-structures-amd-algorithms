@@ -11,5 +11,3 @@ I tried not to use any built in methods, I manage to ad to the array and make th
 
 ## Solution
 
-
-
