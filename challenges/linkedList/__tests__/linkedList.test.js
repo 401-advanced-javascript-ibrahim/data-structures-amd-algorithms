@@ -54,5 +54,39 @@ describe('Linked List', () => {
         expect(ll.toString()).toMatch("foo -> fuzz -> buzz -> NULL")
     });
 
+    it('Can successfully insert a node before a node located in the middle of a linked list', () => {
+        ll.insert('foo'); /// this is the first node in the linked list
+        ll.insert('fuzz');
+        ll.insert('buzz');
+        ll.insertBefore('fuzz', 'newValue')
+        expect(ll.toString()).toMatch("foo -> newValue -> fuzz -> buzz -> NULL")
+    })
+
+    it('Can successfully insert a node before the first node of a linked list', () => {
+        ll.insert('foo'); /// this is the first node in the linked list
+        ll.insert('fuzz');
+        ll.insert('buzz');
+        ll.insertBefore('foo', 'newValue')
+        expect(ll.toString()).toMatch("newValue -> foo -> fuzz -> buzz -> NULL")
+    })
+
+    it('Can successfully insert after a node in the middle of the linked list', () => {
+        ll.insert('foo'); /// this is the first node in the linked list
+        ll.insert('fuzz');
+        ll.insert('buzz');
+        ll.insertAfter('fuzz', 'newValue')
+        expect(ll.toString()).toMatch("foo -> fuzz -> newValue -> buzz -> NULL")
+    })
+
+    it('Can successfully insert a node after the last node of the linked list', () => {
+        ll.insert('foo'); /// this is the first node in the linked list
+        ll.insert('fuzz');
+        ll.insert('buzz');
+        ll.insertAfter('buzz', 'newValue')
+        expect(ll.toString()).toMatch("foo -> fuzz -> buzz -> newValue -> NULL")
+    })
+
+
+
 })
 
