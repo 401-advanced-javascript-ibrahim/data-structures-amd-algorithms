@@ -87,6 +87,43 @@ class LinkedList {
             currentNode = currentNode.next
         }
     }
+
+    kthFromEnd(k) {
+        let currentNode = this.head;
+        let length = 0;
+
+        while (currentNode) {
+            length++;
+            currentNode = currentNode.next;
+        }
+
+        let demandedNode = length - 1 - k;
+        if (demandedNode < 0 || k < 0) {
+            return 'exception'
+        }
+
+        currentNode = this.head
+
+        while (demandedNode > 0) {
+            demandedNode--;
+            currentNode = currentNode.next
+        }
+
+        return currentNode.value
+    }
 }
+
+
+const nn = new LinkedList();
+nn.insert(1)
+nn.insert(2)
+nn.insert(3)
+nn.insert(4)
+nn.insert(5)
+
+
+
+console.log('sss', nn.kthFromEnd(3));
+
 
 module.exports = LinkedList;
