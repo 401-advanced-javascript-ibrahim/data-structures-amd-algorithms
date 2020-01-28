@@ -130,9 +130,21 @@ describe('Linked List', () => {
         ll.insert('rr'); /// the length of the linked list is 5
 
         expect(ll.kthFromEnd(2)).toMatch("ff")
-    })
+    });
 
+    it('test mergeLists method which takes two linkedLists and merge them togather', () => {
+        const list1 = new LinkedList();
+        list1.insert(1)
+        list1.insert(3)
+        list1.insert(2)
 
+        const list2 = new LinkedList();
+        list2.insert(5)
+        list2.insert(9)
+        list2.insert(4)
 
+        ll.mergeLists(list1, list2)
+        expect(ll.toString()).toMatch("1 -> 5 -> 3 -> 9 -> 2 -> 4 -> NULL")
+    });
 })
 

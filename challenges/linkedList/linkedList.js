@@ -111,19 +111,40 @@ class LinkedList {
 
         return currentNode.value
     }
+
+    mergeLists(list1, list2) {
+        let currentNode1 = list1.head
+        let currentNode2 = list2.head
+
+        while (currentNode1 || currentNode2) {
+            if (currentNode1) {
+                this.insert(currentNode1.value)
+                currentNode1 = currentNode1.next
+            }
+            if (currentNode2) {
+                this.insert(currentNode2.value)
+                currentNode2 = currentNode2.next
+            }
+        }
+        return this
+    }
 }
 
 
-const nn = new LinkedList();
-nn.insert(1)
-nn.insert(2)
-nn.insert(3)
-nn.insert(4)
-nn.insert(5)
+const l1 = new LinkedList();
 
+l1.insert(1)
+l1.insert(3)
+l1.insert(5)
 
+const l2 = new LinkedList();
+l2.insert(2)
+l2.insert(4)
+l2.insert(6)
 
-console.log('sss', nn.kthFromEnd(3));
+const merged = new LinkedList();
+
+console.log('sss', merged.mergeLists(l1, l2));
 
 
 module.exports = LinkedList;
