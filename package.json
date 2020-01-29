@@ -1,0 +1,57 @@
+{
+  "name": "data-structure-and-algorithms",
+  "version": "1.0.0",
+  "description": "<!-- Short summary or background information -->",
+  "main": "arary-shift.test.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "acorn-jsx": "^5.1.0",
+    "chardet": "^0.7.0",
+    "cli-cursor": "^3.1.0",
+    "cli-width": "^2.2.0",
+    "doctrine": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-scope": "^5.0.0",
+    "eslint-utils": "^1.4.3",
+    "eslint-visitor-keys": "^1.1.0",
+    "espree": "^6.1.2",
+    "esquery": "^1.0.1",
+    "esrecurse": "^4.2.1",
+    "external-editor": "^3.1.0",
+    "figures": "^3.1.0",
+    "file-entry-cache": "^5.0.1",
+    "flat-cache": "^2.0.1",
+    "flatted": "^2.0.1",
+    "fsevents": "^2.1.2",
+    "functional-red-black-tree": "^1.0.1",
+    "glob-parent": "^5.1.0",
+    "ignore": "^4.0.6",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.1",
+    "is-promise": "^2.1.0",
+    "mute-stream": "^0.0.8",
+    "os-tmpdir": "^1.0.2",
+    "restore-cursor": "^3.1.0",
+    "run-async": "^2.3.0",
+    "rxjs": "^6.5.4",
+    "slice-ansi": "^2.1.0",
+    "through": "^2.3.8",
+    "tmp": "^0.0.33",
+    "tslib": "^1.10.0",
+    "write": "^1.0.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-ibrahim/data-structures-amd-algorithms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-ibrahim/data-structures-amd-algorithms/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-ibrahim/data-structures-amd-algorithms#readme"
+}
