@@ -29,4 +29,4 @@ function fibSeq(num) {
     };
 };
 
-export default { sumMatrix, fibSeq }
+module.exports = { sumMatrix, fibSeq }
