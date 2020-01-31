@@ -1,20 +1,13 @@
-# Singly Linked List
+# Challenge Summary
 
-Singly linked lists contain nodes which have a data field as well as 'next' field, which points to the next node in line of nodes. Operations that can be performed on singly linked lists include insertion, deletion and traversal.
+## Challenge Description
 
-## Challenge
-
-The challenge asks you to create a couple of methods that deal with linked lists
+* This challnge was an interview with one of my colleague, my challenge was to write a function that check if the linked list is palindrome or not, this function named `palindromeChecker()` 
 
 ## Approach & Efficiency
 
-We create the requested methods and create a test for each method
-`npm run test` : to see the results of the test
-`npm run lint` : to run the linter
+* The function `palindromeChecker()` create an array and take the values of the linked list value and then pass the elements to a loop to check.
 
-## API
+## Solution
 
-`insert()` : This method add a node to the end of the linked list (tail) or make a head for an empty one.
-`includes()` : Check for the given value is in the linked list or not
-`toString()` : This finction takes the value for each node and return them as a string
-
+![](challenges/interview01/assesst/IMG_20200131_180312.jpg)

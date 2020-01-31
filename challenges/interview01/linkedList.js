@@ -50,8 +50,48 @@ class LinkedList {
             currentNode = currentNode.next;
         }
         return linkedListString += ` NULL`;
-    }
-}
+    };
 
+    palindromeChecker() {
+        let currentNode = this.head;
+        let arr = [];
+        let x;
 
+        while (currentNode) {
+            arr.push(currentNode.value)
+            currentNode = currentNode.next;
+        };
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == arr[arr.length - (1 + i)]) {
+                x = true
+            } else {
+                x = false
+                break;
+            };
+        };
+
+        return x
+    };
+};
+
+const ll = new LinkedList();
+ll.insert('t')
+ll.insert('a')
+ll.insert('c')
+ll.insert('o')
+ll.insert('c')
+ll.insert('a')
+ll.insert('t')
+
+const ll2 = new LinkedList();
+ll2.insert('t')
+ll2.insert('c')
+ll2.insert('a')
+ll2.insert('a')
+ll2.insert('w')
+ll2.insert('t')
+
+console.log('tttttt', ll.palindromeChecker());
+console.log('ffffff', ll2.palindromeChecker());
 module.exports = LinkedList;
