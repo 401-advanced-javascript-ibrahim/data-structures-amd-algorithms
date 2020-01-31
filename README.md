@@ -1,11 +1,20 @@
 # Singly Linked List
-<!-- Short summary or background information -->
+
+Singly linked lists contain nodes which have a data field as well as 'next' field, which points to the next node in line of nodes. Operations that can be performed on singly linked lists include insertion, deletion and traversal.
 
 ## Challenge
-<!-- Description of the challenge -->
+
+The challenge asks you to create a couple of methods that deal with linked lists
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+We create the requested methods and create a test for each method
+`npm run test` : to see the results of the test
+`npm run lint` : to run the linter
 
 ## API
-<!-- Description of each method publicly available to your Linked List -->
+
+`insert()` : This method add a node to the end of the linked list (tail) or make a head for an empty one.
+`includes()` : Check for the given value is in the linked list or not
+`toString()` : This finction takes the value for each node and return them as a string
+
