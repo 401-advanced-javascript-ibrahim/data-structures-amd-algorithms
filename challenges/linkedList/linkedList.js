@@ -9,7 +9,7 @@ class Node {
 
 class LinkedList {
     constructor() {
-        this.head = null
+        this.head = null;
     }
 
     insert(value) {
@@ -17,40 +17,40 @@ class LinkedList {
         let node = new Node(value);
 
         if (!this.head) {
-            this.head = node
-            return this
+            this.head = node;
+            return this;
         }
 
         let currentNode = this.head;
         while (currentNode.next) {
-            currentNode = currentNode.next
-        }
+            currentNode = currentNode.next;
+        };
 
         currentNode.next = node;
-        return this
-    }
+        return this;
+    };
 
     includes(value) {
-        let currentNode = this.head
+        let currentNode = this.head;
         while (currentNode) {
             if (currentNode.value === value) {
-                return true
+                return true;
             } else {
                 currentNode = currentNode.next
-            }
-        }
-        return false
-    }
+            };
+        };
+        return false;
+    };
 
     toString() {
         let currentNode = this.head;
-        let linkedListString = ''
+        let linkedListString = '';
         while (currentNode) {
-            linkedListString += ` ${currentNode.value} ->`
+            linkedListString += ` ${currentNode.value} ->`;
             currentNode = currentNode.next;
-        }
-        return linkedListString += ` NULL`
-    }
+        };
+        return linkedListString += ` NULL`;
+    };
 
     insertBefore(value, newVal) {
 
@@ -63,30 +63,30 @@ class LinkedList {
                 if (preNode === null) {
                     this.head = newNode
                 } else {
-                    preNode.next = newNode
-                }
-                newNode.next = currentNode
+                    preNode.next = newNode;
+                };
+                newNode.next = currentNode;
                 break;
-            }
-            preNode = currentNode
-            currentNode = currentNode.next
-        }
-    }
+            };
+            preNode = currentNode;
+            currentNode = currentNode.next;
+        };
+    };
 
     insertAfter(value, newVal) {
-        let newNode = new Node(newVal)
-        let currentNode = this.head
-        let savedNode = null
+        let newNode = new Node(newVal);
+        let currentNode = this.head;
+        let savedNode = null;
 
         while (currentNode) {
             if (currentNode.value === value) {
-                savedNode = currentNode.next
-                currentNode.next = newNode
-                newNode.next = savedNode
-            }
-            currentNode = currentNode.next
-        }
-    }
-}
+                savedNode = currentNode.next;
+                currentNode.next = newNode;
+                newNode.next = savedNode;
+            };
+            currentNode = currentNode.next;
+        };
+    };
+};
 
 module.exports = LinkedList;
