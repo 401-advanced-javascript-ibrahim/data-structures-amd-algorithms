@@ -1,11 +1,11 @@
-# Challenge Summary
-This challenge makes you more familiar with linkedLists and how to do methods on them
+# Singly Linked List
+<!-- Short summary or background information -->
 
-## Challenge Description
-It's asking you to create some methods on likedLists and test them
+## Challenge
+<!-- Description of the challenge -->
 
 ## Approach & Efficiency
-I think I did all the requirements, still the streach goals
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
-## Solution
-<!-- Embedded whiteboard image -->
+## API
+<!-- Description of each method publicly available to your Linked List -->
