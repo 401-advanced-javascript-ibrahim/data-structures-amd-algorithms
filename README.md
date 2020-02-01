@@ -1,20 +1,31 @@
-# Singly Linked List
+# Stacks and Queues
 
-Singly linked lists contain nodes which have a data field as well as 'next' field, which points to the next node in line of nodes. Operations that can be performed on singly linked lists include insertion, deletion and traversal.
+* Stack is a data structure that consists of Nodes. Each Node references the next Node in the stack, but does not reference its previous.
+
+* Queue is a container of objects (a linear collection) that are inserted and removed according to the first-in first-out (FIFO) principle
 
 ## Challenge
 
-The challenge asks you to create a couple of methods that deal with linked lists
+* The goal is to create methods to each the stack and the queue, these are the basic methods can applied on each.
 
 ## Approach & Efficiency
 
-We create the requested methods and create a test for each method
-`npm run test` : to see the results of the test
-`npm run lint` : to run the linter
+* To make the test cleaner, we create an extra method that convert each stack and queue to an array.
+* Every method has been tested and approve their effectiveness on the classes
 
 ## API
 
-`insert()` : This method add a node to the end of the linked list (tail) or make a head for an empty one.
-`includes()` : Check for the given value is in the linked list or not
-`toString()` : This finction takes the value for each node and return them as a string
+### Stacks:
+
+* `push` : can add one or multi elements to a stack
+* `pop` : can take off and return the last element (top) from a stack
+* `peek` : return back the value of the last elemnt that pushed into a stack
+* `isEmpty` : check if the stack is empty or not
+
+### Queues:
+
+* `enqueue` : can add one or multi elements to a queue.
+* `dequeue` : can take off and return the last element (front) from a queue.
+* `peek` : return back the value of the last elemnt that enqueued into a queue.
+* `isEmpty` : check if the queue is empty or not.
 
