@@ -7,7 +7,7 @@ The challenge asks you to create a method inside your linked list class named `k
 
 ## Approach & Efficiency
 
-The Big O notation defines an upper bound of an algorithm, it bounds a function only from above. For example, consider the case of Insertion Sort. It takes linear time in best case and quadratic time in worst case
+`kthFromEnd(k)`: this method is big O(n), because it needs to iterates over each node of the linked list to count the length of it.
 
 ## Solution
 

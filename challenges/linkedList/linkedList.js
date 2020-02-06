@@ -2,7 +2,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-redeclare */
 
-'use strict';
+
 
 class Node {
   constructor(value) {
@@ -41,10 +41,10 @@ class LinkedList {
         return true;
       } else {
         currentNode = currentNode.next;
-      };
-    };
+      }
+    }
     return false;
-  };
+  }
 
   toString() {
     let currentNode = this.head;
@@ -52,9 +52,9 @@ class LinkedList {
     while (currentNode) {
       linkedListString += ` ${currentNode.value} ->`;
       currentNode = currentNode.next;
-    };
+    }
     return linkedListString += ' NULL';
-  };
+  }
 
   insertBefore(value, newVal) {
 
@@ -68,14 +68,14 @@ class LinkedList {
           this.head = newNode;
         } else {
           preNode.next = newNode;
-        };
+        }
         newNode.next = currentNode;
         break;
-      };
+      }
       preNode = currentNode;
       currentNode = currentNode.next;
-    };
-  };
+    }
+  }
 
   insertAfter(value, newVal) {
     let newNode = new Node(newVal);
@@ -87,10 +87,10 @@ class LinkedList {
         savedNode = currentNode.next;
         currentNode.next = newNode;
         newNode.next = savedNode;
-      };
+      }
       currentNode = currentNode.next;
-    };
-  };
+    }
+  }
 
   kthFromEnd(k) {
     let currentNode = this.head;
@@ -99,23 +99,23 @@ class LinkedList {
     while (currentNode) {
       length++;
       currentNode = currentNode.next;
-    };
+    }
 
     let demandedNode = length - 1 - k;
     if (demandedNode < 0 || k < 0) {
       return 'exception';
-    };
+    }
 
     currentNode = this.head;
 
     while (demandedNode > 0) {
       demandedNode--;
       currentNode = currentNode.next;
-    };
+    }
 
     return currentNode.value;
-  };
-};
+  }
+}
 
 
 const nn = new LinkedList();
