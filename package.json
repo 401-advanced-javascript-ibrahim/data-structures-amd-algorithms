@@ -1,0 +1,25 @@
+{
+  "name": "data-structures-amd-algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "lint": "eslint '**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-ibrahim/data-structures-amd-algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-ibrahim/data-structures-amd-algorithms/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-ibrahim/data-structures-amd-algorithms#readme"
+}
