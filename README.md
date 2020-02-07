@@ -11,7 +11,12 @@
 ## Approach & Efficiency
 
 * To make the test cleaner, we create an extra method that convert each stack and queue to an array.
-* Every method has been tested and approve their effectiveness on the classes
+
+* Every method has been tested and approve their effectiveness on the classes.
+
+* all methods of stack take big O(1), since it is just adding or removing
+
+* For the queue all methods take big O(1), except for the dequeue method this takes big O(n).
 
 ## API
 
