@@ -7,7 +7,7 @@
 ## Approach & Efficiency
 
 - `enqueue` : adding an element to a queue using one array's method (big O(1))
-- `dequeue` : removing an element from a queue using two array's methods.(big O(2))
+- `dequeue` : removing an element from a queue using two array's methods.(big O(n))
 
 ## Solution
 
