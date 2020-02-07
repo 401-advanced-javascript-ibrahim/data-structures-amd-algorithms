@@ -10,7 +10,7 @@ The challenge asks you to create three methods on the linked list
 
 ## Approach & Efficiency
 
-The Big O notation defines an upper bound of an algorithm, it bounds a function only from above. For example, consider the case of Insertion Sort. It takes linear time in best case and quadratic time in worst case
+`insertBefore()` & `insertAfter()` works with big O(n), it moves  from node to node until it reach the demanded node.
 
 ## Solution
 
