@@ -7,7 +7,7 @@ Here we are going to create a method to our linked list class that will take two
 
 ## Approach & Efficiency
 
-The Big O notation defines an upper bound of an algorithm, it bounds a function only from above. For example, consider the case of Insertion Sort. It takes linear time in best case and quadratic time in worst case
+`mergeLists()`: this method definitely goes with big O(n) because it push every single value of each linked list so `n` will be the sum of the number of the nodes of each list.
 
 ## Solution
 
