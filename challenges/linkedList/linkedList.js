@@ -8,13 +8,13 @@ class Node {
   constructor(value) {
     this.value = value;
     this.next = null;
-  };
-};
+  }
+}
 
 class LinkedList {
   constructor() {
     this.head = null;
-  };
+  }
 
   insert(value) {
 
@@ -23,16 +23,16 @@ class LinkedList {
     if (!this.head) {
       this.head = node;
       return this;
-    };
+    }
 
     let currentNode = this.head;
     while (currentNode.next) {
       currentNode = currentNode.next;
-    };
+    }
 
     currentNode.next = node;
     return this;
-  };
+  }
 
   includes(value) {
     let currentNode = this.head;
@@ -41,10 +41,10 @@ class LinkedList {
         return true;
       } else {
         currentNode = currentNode.next;
-      };
-    };
+      }
+    }
     return false;
-  };
+  }
 
   toString() {
     let currentNode = this.head;
@@ -52,9 +52,9 @@ class LinkedList {
     while (currentNode) {
       linkedListString += ` ${currentNode.value} ->`;
       currentNode = currentNode.next;
-    };
+    }
     return linkedListString += ' NULL';
-  };
+  }
 
   insertBefore(value, newVal) {
 
@@ -68,14 +68,14 @@ class LinkedList {
           this.head = newNode;
         } else {
           preNode.next = newNode;
-        };
+        }
         newNode.next = currentNode;
         break;
-      };
+      }
       preNode = currentNode;
       currentNode = currentNode.next;
-    };
-  };
+    }
+  }
 
   insertAfter(value, newVal) {
     let newNode = new Node(newVal);
@@ -87,10 +87,10 @@ class LinkedList {
         savedNode = currentNode.next;
         currentNode.next = newNode;
         newNode.next = savedNode;
-      };
+      }
       currentNode = currentNode.next;
-    };
-  };
+    }
+  }
 
   kthFromEnd(k) {
     let currentNode = this.head;
@@ -99,22 +99,22 @@ class LinkedList {
     while (currentNode) {
       length++;
       currentNode = currentNode.next;
-    };
+    }
 
     let demandedNode = length - 1 - k;
     if (demandedNode < 0 || k < 0) {
       return 'exception';
-    };
+    }
 
     currentNode = this.head;
 
     while (demandedNode > 0) {
       demandedNode--;
       currentNode = currentNode.next;
-    };
+    }
 
     return currentNode.value;
-  };
+  }
 
   mergeLists(list1, list2) {
     let currentNode1 = list1.head;
@@ -124,15 +124,15 @@ class LinkedList {
       if (currentNode1) {
         this.insert(currentNode1.value);
         currentNode1 = currentNode1.next;
-      };
+      }
       if (currentNode2) {
         this.insert(currentNode2.value);
         currentNode2 = currentNode2.next;
-      };
-    };
+      }
+    }
     return this;
-  };
-};
+  }
+}
 
 
 const l1 = new LinkedList();
