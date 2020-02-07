@@ -1,4 +1,7 @@
+/* eslint-disable no-console */
 /* eslint-disable no-undef */
+/* eslint-disable no-redeclare */
+/* eslint-disable strict */
 'use strict';
 
 const LinkedList = require('../linkedList.js');
@@ -87,7 +90,49 @@ describe('Linked List', () => {
     expect(ll.toString()).toMatch('foo -> fuzz -> buzz -> newValue -> NULL');
   });
 
+  it('tests where k is greater than the length of the linked list ', () => {
+    ll.insert(1); /// this is the first node in the linked list
+    ll.insert(2);
+    ll.insert(3);
+    ll.insert(4);
+    ll.insert(5); /// the length of the linked list is 5
 
+    expect(ll.kthFromEnd(7)).toMatch('exception');
+  });
 
+  it('tests where k and the length of the list are the same', () => {
+    ll.insert('a'); /// this is the first node in the linked list
+    ll.insert('b');
+    ll.insert('c');
+    ll.insert('d');
+    ll.insert('f'); /// the length of the linked list is 5
+
+    expect(ll.kthFromEnd(5)).toMatch('exception');
+  });
+
+  it('tests where k is not a positive integer ', () => {
+    ll.insert('ss'); /// this is the first node in the linked list
+    ll.insert('dd');
+    ll.insert('ff');
+    ll.insert('gg');
+    ll.insert('rr'); /// the length of the linked list is 5
+
+    expect(ll.kthFromEnd(-3)).toMatch('exception');
+  });
+
+  it('tests where the linked list is of a size 1', () => {
+    ll.insert('rr'); /// the length of the linked list is 1
+
+    expect(ll.kthFromEnd(1)).toMatch('exception');
+  });
+
+  it('tests where k is not at the end, but somewhere in the middle of the linked list', () => {
+    ll.insert('ss'); /// this is the first node in the linked list
+    ll.insert('dd');
+    ll.insert('ff');
+    ll.insert('gg');
+    ll.insert('rr'); /// the length of the linked list is 5
+
+    expect(ll.kthFromEnd(2)).toMatch('ff');
+  });
 });
-
