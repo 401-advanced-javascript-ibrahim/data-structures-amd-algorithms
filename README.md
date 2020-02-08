@@ -2,14 +2,13 @@
 
 ## Challenge Description
 
-* A queue can be implemented using two stacks. Let queue to be implemented be q and stacks used to implement q be stack1 and stack2.
+* Class named AnimalShelter takes two arrays as its arguments, these two arrays represent the type of animals in that shelter 
 
 ## Approach & Efficiency
 
-- `enqueue` : adding an element to a queue using one array's method (big O(1))
-- `dequeue` : removing an element from a queue using two array's methods.(big O(2))
+- `enqueue` : adding an element to a queue (big O(1))
+- `dequeue` : removing an element from a queue (big O(1))
 
 ## Solution
 
-![](assesst/1.jpeg)
-
+![](assesst/12.jpeg)

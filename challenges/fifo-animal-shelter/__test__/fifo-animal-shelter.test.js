@@ -60,7 +60,7 @@ describe('tests our nodes', () => {
     animalShelter.dequeue({ species: 'cat' });
 
     expect(animalShelter.cat[0].species).toEqual('cat');
-    expect(animalShelter.cat[0].name).toEqual('ariel');
+    expect(animalShelter.cat[0].name).toEqual('she-fu');
   });
 
   it('should dequeue nothing if the pref is not dog or cat', () => {
@@ -69,7 +69,7 @@ describe('tests our nodes', () => {
     animalShelter.dequeue({ species: 'potato' });
 
     expect(animalShelter.cat[0].species).toEqual('cat');
-    expect(animalShelter.cat[0].name).toEqual('she-fu');
+    expect(animalShelter.cat[0].name).toEqual('Abu Aseel');
   });
 
 });
