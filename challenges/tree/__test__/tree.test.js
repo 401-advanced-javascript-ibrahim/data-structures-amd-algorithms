@@ -2,7 +2,18 @@
 
 'use strict';
 
-const { Node, BT } = require('../tree.js');
+const { Node, BT, BST } = require('../tree.js');
+
+describe('Tree', () => {
+  it('Can successfully instantiate an empty tree', () => {
+    let tree = new BT();
+    expect(tree.root).toBeNull();
+  });
+  it('Can successfully instantiate a tree with a single root node', () => {
+    let tree = new BT(1);
+    expect(tree.root).toEqual(1);
+  });
+});
 
 describe('BT', () => {
 
@@ -38,5 +49,18 @@ describe('BT', () => {
   it('postOrder', () => {
     let expected = ['omar', 'saleh', 'ibrahim', 'osama', 'mohammad', 'awad'];
     expect(tree.postOrder()).toEqual(expected);
+  });
+});
+
+describe('BST', () => {
+  it('Can successfully add a left child and right child to a single root node', () => {
+    let tree = new BST();
+    let four = 4;
+    tree.add(four);
+    tree.add(2);
+    tree.add(5);
+    expect(tree.root.value).toEqual(4);
+    expect(tree.root.left.value).toEqual(2);
+    expect(tree.root.right.value).toEqual(5);
   });
 });
