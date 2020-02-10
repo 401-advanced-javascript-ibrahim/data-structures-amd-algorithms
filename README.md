@@ -1,10 +1,10 @@
 # Challenge Summary
 
 ## Challenge Description
-The challnge test each value of the tree to change them into Fizz, Buzz, or FizzBuzz
+- Take every single element of the tree using Breadth-first Traversal.
 
 ## Approach & Efficiency
-This method takes Big O(n)
+`breadthFirst()`: This method takes Big O(n)
 
 ## Solution
 
