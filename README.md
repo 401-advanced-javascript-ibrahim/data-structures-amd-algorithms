@@ -1,11 +1,11 @@
 # Challenge Summary
 
 ## Challenge Description
-- Take every single element of the tree using Breadth-first Traversal.
+- Finding the maximum value of the tree.
 
 ## Approach & Efficiency
-`breadthFirst()`: This method takes Big O(n)
+`find-maximum-value()`: This method takes Big O(n)
 
 ## Solution
 
-![](assesst/22.jpg)
+![](assesst/3333.jpg)
