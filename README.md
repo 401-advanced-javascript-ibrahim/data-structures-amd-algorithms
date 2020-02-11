@@ -2,14 +2,20 @@
 
 ## Challenge Description
 
-* A queue can be implemented using two stacks. Let queue to be implemented be q and stacks used to implement q be stack1 and stack2.
+Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+Round Brackets : ()
+
+Square Brackets : []
+
+Curly Brackets : {}
 
 ## Approach & Efficiency
 
-- `enqueue` : adding an element to a queue using one array's method (big O(1))
-- `dequeue` : removing an element from a queue using two array's methods.(big O(2))
+Create a function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced.
+
+Big O:
+This solution has a Big O notation efficiency of O(n) for time and space.
 
 ## Solution
 
-![](assesst/1.jpeg)
-
+![](assesst/555.jpeg)

@@ -9,6 +9,7 @@ function multiBracketValidation(input) {
     '[': ']',
     '(': ')',
   };
+  input = input.replace(/\s/g, '');
   for (let i = 0; i < input.length; i++) {
     if (input[i] === '{' || input[i] === '[' || input[i] === '(') {
       bracketsArr.push(input[i]);
