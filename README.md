@@ -8,4 +8,4 @@
 
 ## Solution
 
-![](assesst/55.jpg)
+![](assesst/22.jpg)
