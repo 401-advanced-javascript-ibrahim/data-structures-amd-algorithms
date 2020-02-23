@@ -1,11 +1,15 @@
 # Challenge Summary
 
 ## Challenge Description
-- Finding the maximum value of the tree.
+- Creating sort method for an array.
 
 ## Approach & Efficiency
-`find-maximum-value()`: This method takes Big O(n)
+### `insertionSort(arr)`: 
+- time: Big O(n);
+- space: Big O(1);
+- this method takes an array as its input and return it sorted.
 
 ## Solution
 
-![](assesst/3333.jpg)
+![](challenges/insertion-sort/assesst/1.jpg)
+![](challenges/insertion-sort/assesst/2.jpg)
