@@ -32,9 +32,3 @@ arr = [8, 4, 23, 42, 16, 15]
 * `right = [15, 16, 42]` 
 * Here is the final pass will take the left and the right each is sorted and then start to sort and merge the final array will be `[4,8,15,16,23,42]` 
 
-
-## Solution
-
-![](challenges/insertion-sort/assesst/1.jpg)
-![](challenges/insertion-sort/assesst/2.jpg)
-
